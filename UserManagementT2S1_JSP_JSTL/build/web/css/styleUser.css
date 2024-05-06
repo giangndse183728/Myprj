@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 25, 2024, 10:35:23 AM
+    Author     : nguye
+*/
+
+.cardp {
+    background-color: #303030;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+.cardi {
+    
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: 0px 15px 30px rgb(22, 22, 22);
+    border-radius: 20px;
+}
+.offcanvas-header {
+    background-color: #303030;
+}

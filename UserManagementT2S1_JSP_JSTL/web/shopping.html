@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+
+        <link rel="stylesheet" href="css/styleShopping.css" type="text/css"/>
+
+
+    </head>
+    <body>
+
+
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+         
+                <img class="navbar-brand" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/AvantGarde_logo.svg/1200px-AvantGarde_logo.svg.png" alt="alt" style="height:100px; width:120px" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="user.jsp">Account</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MainController?action=Logout">Logout</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                     
+                    
+                    <form action="MainController" method="POST" class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit" name="action" value="View">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-blackgray py-5">
+            <div class="container">
+                 <img src="https://images.indianexpress.com/2023/03/heliot-emil-1200.jpg" alt="..." style="width: 100%; height: 500px ">
+               
+            </div>
+        </header>
+        <!-- Section-->
+       
+        
+        <section class="bg-whitegray py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://www.playful-dc.com/images/products/131613/131613_1.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Geogre Cox CDG</h5>
+                                    <!-- Product price-->
+                                    $400.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g001-George Cox x CDG-400">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51nROM0Iv9L.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">MMY</h5>
+
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$300.00</span>
+                                    $250.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g002-MAISON MIHARA YASUHIRO-250">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://sneakerdaily.vn/wp-content/uploads/2023/03/giay-mschf-big-red-boot-mschf010-5.png.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">MSCHF Boots</h5>
+                                    <!-- Product price-->
+                                    
+                                    $900.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g003-MSCHF's Big Red Boots-900">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://marais.com.au/cdn/shop/products/DW02B3803700109-A-marais.com.jpg?v=1673225966" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">DrMarten x RO</h5>
+                            
+                                    <!-- Product price-->
+                                    $350.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g004-Dr. Martens x RO -350">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://www.woodchucksato.com/cdn/shop/products/20220806235317_1024x1024.jpg?v=1674946122" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">RO Kiss boost</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$1200.00</span>
+                                    $1000.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g005-RO Kiss Boots-1000">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/1c978add-556b-40f9-830c-85bcdc16c44c/shox-mr4-x-martine-rose-black-dq2401-001-release-date.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nike x Martin rose</h5>
+                                    <!-- Product price-->
+                                    $300.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController" >
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g006-Nike x Martin rose-300">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://thehyp.co/_next/image?url=https%3A%2F%2Fdf0f8h5laav22.cloudfront.net%2Fri-ZmBoJW0u5LG89t7-iKmXK&w=3840&q=75" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Vans Knu custom</h5>
+                                    
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through"> $250.00</span>
+                                    $200.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController">
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g007-Vans Knu custom-200">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://marais.com.au/cdn/shop/products/679326W0FO82000-A-marais.com.au.jpg?v=1675036190" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Balenciaga Trooper</h5>
+                                   
+                                    
+                                    <!-- Product price-->
+                                    $300.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form action="MainController">
+                                    <button class="btn btn-outline-dark mt-auto"  type="submit" name="action" value="Add">
+                                        <input type="hidden" name="weapon" value="g008-Balenciaga Trooper-300" id="myBtn">
+                                        <input type="hidden" name="quantity" value="1">
+                                        Add to cart
+                                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal content -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
+        </div>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; DnilbThrift</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+ // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        </script>
+    </body>
+</html>
